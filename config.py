@@ -1,9 +1,9 @@
-import os
+import os 
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
-    SECRET_KEY =os.environ.get('SECRET_KEY')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://{user}:{pw}@{host}:{port}/{db}".format(
         user=os.environ.get("DB_USER"),
         pw=os.environ.get("DB_PASSWORD"),
@@ -11,5 +11,4 @@ class Config:
         port=os.environ.get("DB_PORT"),
         db=os.environ.get("DB_NAME")
     )
-    SQLALCHEMY_TRACK_MODIFICATIOINS = False
-    
+    SQLALCHEMY_TRACK_MODIFICATIONS = False

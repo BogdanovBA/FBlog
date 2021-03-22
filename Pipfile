@@ -1,18 +1,22 @@
 [[source]]
+name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-name = "pypi"
+
+[dev-packages]
 
 [packages]
+flask = "*"
 python-dotenv = "*"
-psycopg2 = "*"
-flask-login = "*"
+psycopg2-binary = "*"
 flask-wtf = "*"
 email-validator = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
-
-[dev-packages]
+psycopg2 = "*"
+flask-login = "*"
+pillow = "*"
+flask-mail = "*"
 
 [requires]
 python_version = "3.9"
